@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #2A2A2A;
+}
+
+body {
+    margin: 0;
+    box-sizing: inherit;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+    overflow: hidden;
+}
+
+main {
+    text-transform: uppercase;
+    width: 100vw;
+    height: 100vh;
+}
+
+#caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 60%;
+    font-size: 2rem;
+    user-select: none;
+    animation: Fade 1.5s ease;
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    width: 60%;
+    line-height: 30px;
+}
+
+span.divider {
+    color: #fff;
+    transition: color 0.5s ease;
+    cursor: default;
+    z-index: 100;
+}
+
+#larv {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    display: block;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: -1;
+}
+
+span.divider:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+.input {
+    min-width: 20%;
+    display: inline-block;
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+
+@keyframes Fade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
